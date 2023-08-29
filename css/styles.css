@@ -20,8 +20,10 @@
     
     .list{list-style: none}
     
-    .astudio{font-weight: 500; font-size: 16px; line-height: 1.5; letter-spacing: 0.02em; color: var(--title-color); padding: 24px 0; display:block;}
+    .astudio{font-weight: 500; font-size: 16px; line-height: 1.5; letter-spacing: 0.02em; color: var(--title-color); padding: 24px 0; display:block; position: relative; color:var(--focushover-color); color: 250ms cubic-bezier(0.4, 0, 0.2, 1);  color: 250ms cubic-bezier(0.4, 0, 0.2, 1)}
     
+    .astudio::after{content:""; position:absolute; left:0; bottom: -1px; height: 4px; background-color: var(--focushover-color); border-radius: 2px;}
+
     .astudio:focus{color: var(--focushover-color);}
     
     .astudio:hover{color: var(--focushover-color)}
@@ -31,7 +33,7 @@
     .mailandtel{color: var(--section-color); font-family: "Roboto"; font-size: 16px; font-weight: 400; font-style: normal}
     
     .hero{background-color: var(--title-color); background-image:linear-gradient(rgba(46, 47, 66, 0.7), 
-        rgba(46, 47, 66, 0.7)), url(../images/hero/hero_bg.jpg); background-repeat: no-repeat; background-position: center; max-width: 1440px; height: 600px; margin: 0 auto;  padding: 188px 0;}
+        rgba(46, 47, 66, 0.7)), url(../images/hero/hero_bg.jpg); background-repeat: no-repeat; background-position: center; max-width: 1440px; height: 600px; margin: 0 auto;  padding: 188px 0; background-size: cover}
     
     .container{
         width: 1158px ;
@@ -138,7 +140,7 @@
     
     .header-container{display:flex; align-items: center;}
     
-    .header{border-bottom: 1px solid #e7e9fc}
+    .header{border-bottom: 1px solid #e7e9fc; box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);}
     
     .button_list{display:flex; gap:24px; justify-content: center; margin-bottom: 72px}
     
@@ -162,7 +164,7 @@
 
     .card-container{padding: 32px 16px; border: 1px solid #e7e9fc; border-top: none;}
     
-    .pluses_list_item_container{width: 264px; height: 112px; display: flex; align-items: center; justify-content: center; background-color: var(--button-background-color); margin-bottom: 8px}
+    .pluses_list_item_container{width: 264px; height: 112px; display: flex; align-items: center; justify-content: center; background-color: var(--button-background-color); margin-bottom: 8px; border-radius: 4px}
 
     .team_list_item_container{width: 232px; height: 40px; display:flex; align-items: center; justify-content: center; gap:24px; margin-bottom:32px}
 
@@ -179,3 +181,15 @@ box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 3px 0px rgba(0, 0, 0, 0
  position:absolute; top: 50%; left: 50%; transform: translateX(-50%) translateY(-50%) ;}
     
     .modal-btn{background-color: transparent; border: none; padding: 0;}
+
+    .social-networks_list{display: flex; justify-content: center; gap:24px; }
+
+    .social-networks_item{width: 40px; height: 40px; }
+
+    .social_networks_link{ width: 100%; height: 100%; background-color: var(--primary-color); border-radius: 50%; display: flex; align-items: center; justify-content: center; }
+
+    .social_networks_link:hover{background-color: var(--focushover-color);}
+
+    .social_networks_link:focus{background-color: var(--focushover-color);}
+
+    .team_list_icon{fill: var(--button-background-color);}
