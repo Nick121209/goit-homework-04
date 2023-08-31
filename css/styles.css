@@ -36,13 +36,14 @@ body {
 .link {
   text-decoration: none;
   display: block;
-  box-shadow: 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
+
+.card_link{box-shadow: 250ms cubic-bezier(0.4, 0, 0.2, 1); }
 
 .link:hover {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-    transform: translateY(0%);
+     transform: translateY(0%);
 }
 
 .link:focus {
@@ -68,12 +69,11 @@ body {
   padding: 24px 0;
   display: block;
   position: relative;
-  color: var(--focushover-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   
 }
 
-.astudio::after {
+.astudio.current::after {
   content: "";
   position: absolute;
   left: 0;
@@ -81,6 +81,7 @@ body {
   height: 4px;
   background-color: var(--focushover-color);
   border-radius: 2px;
+  width: 100%
 }
 
 .astudio:focus {
@@ -301,6 +302,7 @@ body {
   letter-spacing: 0.02em;
   color: var(--section-color);
   padding: 24px 0;
+  transition:  color 250ms cubic-bezier(0.4, 0, 0.2, 1)
 }
 
 .icontact:hover {
@@ -577,7 +579,7 @@ img {
 
 .modal-button_icon:focus{fill: var(--white-color)}
 
-.modal-button:hover{fill: var(--white-color)}
+.modal-button_icon:hover{fill: var(--white-color)}
 
 
 
@@ -586,6 +588,7 @@ img {
   display: flex;
   justify-content: center;
   gap: 24px;
+  margin-top: 8px;
 }
 
 .social_networks_item {
@@ -704,3 +707,5 @@ img {
 .window_container{position: relative; overflow: hidden; }
 
 .window_paragraph{position:absolute; top:0; font-size: 16px; line-height: 1.5; letter-spacing: 0.02em; color: var(--button-background-color); padding: 40px 32px; background-color: var(--primary-color); height:100%; width: 100%;  transform: translateY(100%);  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1)}
+
+.astudio.current{color: var(--focushover-color)}
