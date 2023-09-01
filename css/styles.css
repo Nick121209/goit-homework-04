@@ -52,9 +52,9 @@ body {
     transform: translateY(0%)
 }
 
-.card_link:hover .app{transform: translateY(0)}
+.card_link:hover .window_paragraph{transform: translateY(0)}
 
-.card_link:focus .app{transform: translateY(0)}
+.card_link:focus .window_paragraph{transform: translateY(0)}
 
 .studio {
   color: var(--title-color);
