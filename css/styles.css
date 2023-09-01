@@ -574,15 +574,14 @@ img {
   height: 24px;
 }
 
-.modal-btn:hover{background-color: var(--focushover-color); border: none;}
+.modal-btn:hover, .modal-btn:focus{background-color: var(--focushover-color); border: none;}
 
-.modal-btn:focus{background-color: var(--focushover-color); border: none;}
 
-.modal-button_icon{ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);}
+.modal-btn_icon{ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);}
 
-.modal-button_icon:focus{fill: var(--white-color)}
+.modal-btn:hover .moda-btn_icon, .modal-btn:focus .modal-btn_icon{fill: var(--white-color)}
 
-.modal-button_icon:hover{fill: var(--white-color)}
+
 
 
 
